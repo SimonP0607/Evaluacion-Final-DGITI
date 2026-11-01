@@ -1,0 +1,7 @@
+aws_region   = "us-east-1"
+project_name = "dgiti-final"
+repo_url     = "https://github.com/SimonP0607/Evaluacion-Final-DGITI.git"
+repo_branch  = "main"
+db_name      = "agenda"
+db_username  = "agenda_admin"
+db_password  = "CAMBIAR ESTA CONTRASENA"
