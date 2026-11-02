@@ -102,3 +102,13 @@ variable "db_password" {
     error_message = "La contrasena debe tener al menos 12 caracteres: letras, numeros, guion o guion bajo."
   }
 }
+
+variable "health_check_interval" {
+  type    = number
+  default = 10
+
+  validation {
+    condition     = var.health_check_interval >= 5 && var.health_check_interval <= 300
+    error_message = "El intervalo debe estar entre 5 y 300 segundos."
+  }
+}
