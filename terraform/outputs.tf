@@ -49,3 +49,7 @@ output "alb_arn_suffix" {
 output "target_group_arn_suffix" {
   value = aws_lb_target_group.app.arn_suffix
 }
+
+output "dashboard_url" {
+  value = "https://${var.aws_region}.console.aws.amazon.com/cloudwatch/home?region=${var.aws_region}#dashboards:name=${aws_cloudwatch_dashboard.metricas.dashboard_name}"
+}
